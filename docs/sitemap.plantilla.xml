@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- PLANTILLA. Cuando conozcas la dirección final del sitio:
+     1) Reemplaza TODAS las apariciones de https://USUARIO.github.io/NOMBRE-REPO/ por tu dirección real.
+     2) Guarda el archivo como "sitemap.xml" en la carpeta principal (junto a index.html), NO dentro de docs/.
+     No lo publiques con la dirección de ejemplo: los buscadores lo marcarían como inválido. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://USUARIO.github.io/NOMBRE-REPO/</loc></url>
+  <url><loc>https://USUARIO.github.io/NOMBRE-REPO/pages/productos.html</loc></url>
+  <url><loc>https://USUARIO.github.io/NOMBRE-REPO/pages/nosotros.html</loc></url>
+  <url><loc>https://USUARIO.github.io/NOMBRE-REPO/pages/contacto.html</loc></url>
+</urlset>

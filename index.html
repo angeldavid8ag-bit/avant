@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AVANT | Productos de limpieza, venta por litro</title>
+  <meta name="description" content="AVANT: productos de limpieza disponibles hoy, con venta por litro y envíos a domicilio. Arma tu pedido y confírmalo por WhatsApp.">
+  <meta property="og:title" content="AVANT | Productos de limpieza, venta por litro">
+  <meta property="og:description" content="AVANT: productos de limpieza disponibles hoy, con venta por litro y envíos a domicilio. Arma tu pedido y confírmalo por WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es">
+  <meta property="og:site_name" content="AVANT">
+  <meta name="theme-color" content="#01216A">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=7">
+  <link rel="stylesheet" href="css/responsive.css?v=7">
+</head>
+<body data-base="">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <noscript><p class="noscript">Esta tienda necesita JavaScript para mostrar los productos. Actívalo en tu navegador.</p></noscript>
+
+  <div id="site-header"></div>
+
+  <main id="contenido">
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Limpieza y frescura para tu hogar y negocio</h1>
+          <p>Productos de limpieza disponibles hoy, con venta por litro y envíos a domicilio. Arma tu pedido y confírmalo por WhatsApp.</p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="pages/productos.html">Ver productos</a>
+            <a id="hero-wa" class="btn btn-light" href="#">Hacer pedido por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="logo-card"><img src="images/logo-avant.png" alt="" width="273" height="187"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Ventajas">
+      <ul class="container features-list">
+        <li><strong>Venta por litro</strong><span>Presentaciones de 1 L y 5 L.</span></li>
+        <li><strong>Envíos a domicilio</strong><span>Rápido, seguro y confiable.</span></li>
+        <li><strong>Precios que convienen</strong><span>Precios expresados en MXN.</span></li>
+      </ul>
+    </section>
+
+    <section id="categorias" class="section">
+      <div class="container">
+        <h2>Categorías</h2>
+        <p class="section-intro">Encuentra rápido lo que buscas.</p>
+        <ul id="category-grid" class="category-grid"></ul>
+      </div>
+    </section>
+
+    <section id="productos" class="section section-alt">
+      <div class="container">
+        <h2>Productos</h2>
+        <p class="section-intro">Una muestra de nuestro catálogo. <span data-price-note></span></p>
+        <ul id="product-grid" class="product-grid"></ul>
+        <p class="more"><a class="btn btn-primary" href="pages/productos.html">Ver todo el catálogo</a></p>
+      </div>
+    </section>
+
+    <section id="ofertas" class="section">
+      <div class="container">
+        <h2>Paquetes de limpieza</h2>
+        <p class="section-intro">Combinaciones listas para tu hogar o negocio. <span data-price-note></span></p>
+        <ul id="package-grid" class="package-grid"></ul>
+        <p class="more"><a class="btn btn-ghost" href="pages/ofertas.html">Ver todas las ofertas</a></p>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js?v=7"></script>
+  <script src="js/products.js?v=7"></script>
+  <script src="js/offers.js?v=7"></script>
+  <script src="js/api.js?v=7"></script>
+  <script src="js/cart.js?v=7"></script>
+  <script src="js/whatsapp.js?v=7"></script>
+  <script src="js/ui.js?v=7"></script>
+  <script src="js/app.js?v=7"></script>
+</body>
+</html>

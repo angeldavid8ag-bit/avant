@@ -1,0 +1,75 @@
+/* Diseño mobile-first: style.css es el diseño de celular.
+   Aquí solo se agregan ajustes para pantallas más grandes. */
+
+/* ===== Tablet (640px en adelante) ===== */
+@media (min-width: 640px) {
+  h1 { font-size: 2.5rem; }
+  h2 { font-size: 1.9rem; }
+
+  .category-grid { grid-template-columns: repeat(3, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-actions { grid-template-columns: 1fr 1fr; }
+  .footer-inner { grid-template-columns: 2fr 1fr 1fr; }
+}
+
+/* ===== Laptop (960px en adelante): el menú deja de ser hamburguesa ===== */
+@media (min-width: 960px) {
+  .menu-toggle { display: none; }
+
+  .main-nav { position: static; display: block; border: 0; background: none; }
+  .main-nav ul { display: flex; gap: .25rem; }
+  .main-nav a { padding: .5rem .9rem; min-height: 44px; border-radius: 999px; display: flex; align-items: center; }
+
+  .hero { padding: 4rem 0; }
+  .hero-inner { grid-template-columns: 1.2fr 1fr; }
+  h1 { font-size: 3rem; }
+
+  .section { padding: 4.5rem 0; }
+  .category-grid { grid-template-columns: repeat(4, 1fr); }
+  .product-grid { grid-template-columns: repeat(4, 1fr); }
+  .product-actions { grid-template-columns: 1fr; }
+}
+
+/* ===== Etapa 2 ===== */
+@media (min-width: 640px) {
+  .filters { grid-template-columns: repeat(2, 1fr); align-items: end; }
+  .field-wide { grid-column: 1 / -1; }
+  .detail { grid-template-columns: 1fr 1fr; align-items: start; }
+}
+@media (min-width: 960px) {
+  .filters { grid-template-columns: repeat(4, 1fr); }
+}
+
+/* ===== Etapa 3 ===== */
+@media (min-width: 640px) {
+  .cart-item { grid-template-columns: 88px minmax(0, 1fr) auto; }
+  .cart-thumb { grid-column: 1; grid-row: 1; }
+  .cart-info { grid-column: 2; grid-row: 1; min-width: 0; }
+  .cart-controls { grid-column: 3; grid-row: 1; justify-content: flex-end; flex-wrap: nowrap; }
+}
+@media (min-width: 960px) {
+  .cart-layout { grid-template-columns: 1fr 340px; }
+  .cart-summary { position: sticky; top: calc(var(--header-h) + 1rem); }
+}
+
+/* ===== Etapa 4 ===== */
+@media (min-width: 640px) {
+  .package-grid, .info-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 960px) {
+  .package-grid, .info-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-inner { grid-template-columns: 2fr 1fr 1.5fr; }
+}
+@media (min-width: 960px) {
+  .footer-copy { padding-bottom: 1rem; }
+}
+
+/* ===== Etapa 5: pantallas muy angostas ===== */
+@media (max-width: 379px) {
+  .category-grid { grid-template-columns: 1fr; }
+}
+
+/* ===== Adaptación AVANT ===== */
+@media (min-width: 640px) {
+  .features-list { grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+}
