@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Página no encontrada | AVANT</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#01216A">
+  <style>
+    body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 1.5rem; box-sizing: border-box; font-family: system-ui, sans-serif; color: #01216A; background: #E6F5FC; text-align: center; }
+    main { max-width: 32rem; }
+    img { width: 140px; height: auto; margin-bottom: 1rem; }
+    h1 { margin: 0 0 .5rem; font-size: 1.8rem; }
+    p { margin: 0 0 1.5rem; line-height: 1.6; }
+    a { display: inline-block; padding: .75rem 1.5rem; border-radius: 999px; background: #0067B8; color: #fff; font-weight: 600; text-decoration: none; }
+    a:hover { background: #014A8A; }
+    a:focus-visible { outline: 3px solid #01216A; outline-offset: 2px; box-shadow: 0 0 0 2px #fff; }
+  </style>
+</head>
+<body>
+  <main>
+    <img id="logo" src="images/logo-avant.png" alt="AVANT" width="273" height="187">
+    <h1>Página no encontrada</h1>
+    <p>La dirección que abriste no existe o cambió de lugar. Puedes volver al inicio y buscar tu producto desde ahí.</p>
+    <a id="home" href="index.html">Ir al inicio</a>
+  </main>
+  <script>
+    /* Esta página se muestra en cualquier dirección inexistente (por ejemplo /repo/algo/otro),
+       así que las rutas relativas no sirven. En GitHub Pages de proyecto (usuario.github.io/repo/)
+       la raíz del sitio es "/repo/". Si tu repositorio se llama usuario.github.io o usas dominio
+       propio, la raíz es "/" y esta función ya lo resuelve para dominio propio. */
+    function siteRoot(hostname, pathname) {
+      const parts = pathname.split("/").filter(Boolean);
+      return hostname.endsWith(".github.io") && parts.length > 0 ? "/" + parts[0] + "/" : "/";
+    }
+    const root = siteRoot(location.hostname, location.pathname);
+    document.getElementById("home").href = root + "index.html";
+    document.getElementById("logo").src = root + "images/logo-avant.png";
+  </script>
+</body>
+</html>

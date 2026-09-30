@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo de productos de limpieza | AVANT</title>
+  <meta name="description" content="Catálogo AVANT: limpiadores, suavizantes, detergentes, cloro y más. Venta por litro, precios en MXN.">
+  <meta property="og:title" content="Catálogo de productos de limpieza | AVANT">
+  <meta property="og:description" content="Catálogo AVANT: limpiadores, suavizantes, detergentes, cloro y más. Venta por litro, precios en MXN.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es">
+  <meta property="og:site_name" content="AVANT">
+  <meta name="theme-color" content="#01216A">
+  <link rel="icon" type="image/png" href="../images/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css?v=7">
+  <link rel="stylesheet" href="../css/responsive.css?v=7">
+</head>
+<body data-base="../">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <noscript><p class="noscript">Esta tienda necesita JavaScript para mostrar los productos. Actívalo en tu navegador.</p></noscript>
+  <div id="site-header"></div>
+  <main id="contenido" class="section">
+    <div class="container">
+      <h1>Catálogo</h1>
+      <p class="section-intro"><span data-price-note></span></p>
+      <form id="filters" class="filters" role="search">
+        <div class="field field-wide">
+          <label for="f-search">Buscar producto</label>
+          <input id="f-search" type="search" placeholder="Ej. detergente">
+        </div>
+        <div class="field">
+          <label for="f-category">Categoría</label>
+          <select id="f-category"></select>
+        </div>
+        <div class="field">
+          <label for="f-sort">Ordenar por precio</label>
+          <select id="f-sort">
+            <option value="default">Sin ordenar</option>
+            <option value="asc">Menor a mayor</option>
+            <option value="desc">Mayor a menor</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-availability">Disponibilidad</label>
+          <select id="f-availability">
+            <option value="todos">Todos</option>
+            <option value="disponible">Disponible</option>
+            <option value="agotado">Agotado</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="f-presentation">Presentación</label>
+          <select id="f-presentation"></select>
+        </div>
+        <button id="f-clear" class="btn btn-ghost" type="button">Limpiar filtros</button>
+      </form>
+
+      <h2 class="sr-only">Resultados</h2>
+      <p id="result-count" class="result-count" aria-live="polite"></p>
+      <ul id="product-grid" class="product-grid"></ul>
+      <p id="empty-message" class="empty" hidden>No encontramos productos que coincidan con tu búsqueda.</p>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="../js/config.js?v=7"></script>
+  <script src="../js/products.js?v=7"></script>
+  <script src="../js/offers.js?v=7"></script>
+  <script src="../js/api.js?v=7"></script>
+  <script src="../js/cart.js?v=7"></script>
+  <script src="../js/whatsapp.js?v=7"></script>
+  <script src="../js/ui.js?v=7"></script>
+  <script src="../js/filters.js?v=7"></script>
+  <script src="../js/catalog.js?v=7"></script>
+</body>
+</html>
